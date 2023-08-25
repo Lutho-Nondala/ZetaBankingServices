@@ -1,0 +1,19 @@
+
+=============================== 
+647896
+Transaction Type: Deposit 
+Amount Deposited: R50.00
+Previous Balance: R0.00
+Current Balance : R50.00
+=============================== 
+647896
+Transaction Type: Withdrawal 
+Amount Withdrawn: R10.00
+Previous Balance: R50.00
+Current Balance : R40.00
+=============================== 
+647896
+Transaction Type: Deposit 
+Amount Deposited: R10.00
+Previous Balance: R40.00
+Current Balance : R50.00

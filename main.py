@@ -336,7 +336,7 @@ def signUp():
 def welcomeScreen():
     master = ctk.CTk()
     master.title("ZETA BAKING SERVICES")
-    master.geometry("450x500+300+100")
+    master.geometry("450x510+300+100")
     #master.geometry("500x600")
 
     def submitLog():
@@ -350,6 +350,12 @@ def welcomeScreen():
     def submitExit():
         master.destroy()
 
+    def changeMode(a):
+        if a == "Dark":
+            ctk.set_appearance_mode('dark')
+        else:
+            ctk.set_appearance_mode('light')
+
     lblC = ctk.CTkLabel(master=master, text='ZETA BANKING SERVICES', font=('Helvetica bold', 20))
     lblC.pack( padx=20, pady=20)
 
@@ -358,6 +364,8 @@ def welcomeScreen():
 
     your_image = ctk.CTkImage(light_image=PIL.Image.open(os.path.join(IMAGE_PATH)), size=(200, 200))
     label = ctk.CTkLabel(master=master, image=your_image, text='').pack(padx=20, pady=20)
+
+    drpMode = ctk.CTkComboBox(master, values=['Light', 'Dark'], command=changeMode).pack(padx=20, pady=10)
 
     b1 = ctk.CTkButton(master=master, text="Log In", command= submitLog)
     b1.pack(padx=20, pady=10)
